@@ -111,7 +111,7 @@ if (loggedIn) {
     loggedOutView.style.display = "none"
     loggedInView.style.display = "block"
     header.innerHTML = "Welcome to Santa's Workshop " + localStorage.getItem("loggedInUser") + "!"
-    welcomeMessage.innerHTML = "Merry Christmas " + localStorage.getItem("username") + "!"
+    welcomeMessage.innerHTML = "Merry Christmas " + localStorage.getItem("loggedInUser") + "!"
 }
 
 //Log out function
