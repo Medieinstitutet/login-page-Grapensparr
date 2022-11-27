@@ -128,6 +128,14 @@ logOutButton.addEventListener("click", () => {
     localStorage.removeItem("loggedInUser")
 });
 
+//Remember new user if page is reloaded
 if (window.location.reload) {
-    localStorage.getItem("usernameAndPassword")
+    var newUser = {
+        username: localStorage.getItem("username", username),
+        password: localStorage.getItem("password", password)
+    }
+    usernameAndPassword.push(newUser)
+    localStorage.removeItem("usernameAndPassword")
+	let newUsernameAndPassword = JSON.stringify(usernameAndPassword)
+	localStorage.setItem("usernameAndPassword", newUsernameAndPassword)
 }
