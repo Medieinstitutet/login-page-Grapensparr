@@ -23,7 +23,6 @@ const loggedOutView = document.getElementById("loginContainer")
 const loggedInView = document.getElementById("loggedInContainer")
 const errorLogInView = document.getElementById("loginErrorMessage")
 const header = document.getElementById("headerTitle")
-const welcomeUsername = document.getElementById("welcomeUsername")
 const loggedIn = localStorage.getItem("isLoggedIn")
 const usernameInput = document.getElementById("username")
 const passwordInput = document.getElementById("password")
@@ -93,7 +92,6 @@ function logIn() {
         header.innerHTML = "Welcome to Santa's Workshop " + username.value + "!"
 	      
 	localStorage.setItem("loggedInUser", username.value)
-	welcomeUsername.innerHTML = "Merry Christmas " + username.value + "!"
 
         //Keep user logged in
         localStorage.setItem("isLoggedIn", true)
@@ -111,7 +109,6 @@ if (loggedIn) {
     loggedOutView.style.display = "none"
     loggedInView.style.display = "block"
     header.innerHTML = "Welcome to Santa's Workshop " + localStorage.getItem("loggedInUser") + "!"
-    welcomeUsername.innerHTML += "Merry Christmas " + localStorage.getItem("loggedInUser") + "!"
 }
 
 //Log out function
