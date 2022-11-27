@@ -91,7 +91,6 @@ function logIn() {
         loggedOutView.style.display = "none"
         loggedInView.style.display = "block"
         header.innerHTML = "Welcome to Santa's Workshop " + username.value + "!"
-        welcomeUsername.innerHTML += "Merry Christmas " + username.value + "!"
 
         localStorage.setItem("loggedInUser", username.value)
 
