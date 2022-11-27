@@ -122,11 +122,12 @@ button:hover {
     background: var(--color-green);
 }
 
-.resetPassword, .createAccount {
+.createAccount {
     text-align: center;
 }
 
 .createAccountLink, .loginLink {
+    font-size: 1.2rem;
     color: var(--color-black);
     text-decoration: none;
     cursor: pointer;
@@ -134,7 +135,6 @@ button:hover {
 
 .createAccountLink:hover, .loginLink:hover {
     font-weight: bold;
-    font-size: 1.1rem;
 }
 
 #loggedInContainer {
@@ -149,7 +149,7 @@ button:hover {
     z-index: 1;
 }
 
-#welcomeUsername {
+#welcome {
     text-align: center;
     color: black;
     font-style: italic;
