@@ -93,7 +93,7 @@ function logIn() {
         header.innerHTML = "Welcome to Santa's Workshop " + username.value + "!"
 	      
 	localStorage.setItem("loggedInUser", username.value)
-	welcomeUsername.innerHTML += "Merry Christmas " + localStorage.getItem("loggedInUser") + "!"
+	welcomeUsername.innerHTML = "Merry Christmas " + username.value + "!"
 
         //Keep user logged in
         localStorage.setItem("isLoggedIn", true)
