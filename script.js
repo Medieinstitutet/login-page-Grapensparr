@@ -119,6 +119,7 @@ logOutButton.addEventListener("click", () => {
     header.innerHTML = "Santa's Workshop"
     loggedOutView.style.display = "block"
     loggedInView.style.display = "none"
+    welcomeUsername.style.display = "none"
     errorLogInView.style.display = "none"
     errorView.style.display = "none"
     successView.style.display = "none"
