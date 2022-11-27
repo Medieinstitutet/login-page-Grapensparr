@@ -127,3 +127,7 @@ logOutButton.addEventListener("click", () => {
     localStorage.removeItem("isLoggedIn")
     localStorage.removeItem("loggedInUser")
 });
+
+if (window.location.reload) {
+    localStorage.getItem("usernameAndPassword")
+}
